@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HIMTI</title>
+
+<link rel="shortcut icon" href="images/logo.ico">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/vpb_script.js"></script>
+
+</head>
+
+<body>
+	<div id="top">
+        <div id="title-top">
+        	<a href="index.html"><div id="logo-top"></div></a>
+            <a href="javascript:void(0);" class="vpb_general_button" onClick="vpb_show_login_box();" style="float:right; margin-right:10px; margin-top:5px;" id="log" >Login</a>
+            <!--Form Login-->
+                <div id="vpb_pop_up_background"></div>
+                <div id="vpb_login_pop_up_box" class="vpb_signup_pop_up_box">
+                    <div align="left" style="font-family:Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold;">Login</div><br clear="all">
+                    
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">Your Username:</div>
+                    <div style="width:300px;float:left;" align="left"><input type="text" id="usernames" name="usernames" value="" class="vpb_textAreaBoxInputs" placeholder="Username" maxlength="10"></div><br clear="all"><br clear="all">
+                    
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">Your Password:</div>
+                    <div style="width:300px;float:left;" align="left"><input type="password" id="passs" name="passs" value="" class="vpb_textAreaBoxInputs" placeholder="Password"></div><br clear="all"><br clear="all">
+                    <div style="width:400px;float:left;color:red;" align="center" id="error"></div><br clear="all"><br clear="all">
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">&nbsp;</div>
+                    <div style="width:300px;float:left;" align="left">
+                    
+                    <input type="submit" class="vpb_general_button" value="Submit" id="submit" >
+                    
+                    <a href="javascript:void(0);" class="vpb_general_button" onClick="vpb_hide_popup_boxes();">Cancel</a>
+                    </div>
+                    
+                    <br clear="all"><br clear="all">
+                </div>
+            <!--end-->
+           	<div style="visibility:hidden;" id="welcome" >Selamat Datang, </div>
+        </div>
+    </div>
+   
+    <div id="menu" align="center">
+         <ul>
+            <a href="index.html"><li id="menu-bar">Home</li></a>
+            <a href="tentang.html"><li id="menu-bar" class="menu-active">Tentang</li></a>
+            <a href="index.html"><li id="himti"></li></a>
+            <a href="galeri.html"><li id="menu-bar">Galeri</li></a>
+            <a href="artikel.html"><li id="menu-bar">Artikel</li></a>
+        </ul>
+    </div><br>
+    <div id="slider">
+    	<ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+            <div class="slide">
+               <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-6" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-3" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-4" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-5" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-5" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-6" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-6" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-5" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <li class="nav-dots">
+          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+        </li>
+    </ul>
+    </div>
+     <div id="container" style="padding-top:40px;">
+        <div id="three-colom" style="width:1020px;">
+        	<div class="inside1" style="width:680px;">
+            	<div class="content">
+                	<h2 align="center">Lambang Organisasi<br>
+                Himpunan Mahasiswa Teknik Informatika (HIMTI)<br>
+                Universitas   Bina Nusantara</h2><br>
+                <div style="float:left;margin-left:30px;"><img src="images/HIMTI.png" /></div>
+                <div style="float:left; width:400px; margin-left:10px;">
+                <li class="garisbawah">						
+                                 <b>Lingkaran berwarna hitam </b> : melambangkan kesatuan yang utuh </li><li class="garisbawah">						
+                                 <b>Kubus tiga dimensi dengan inisial TI di dalamnya</b> : melambangkan pengetahuan dan teknik yang terus berkembang dan bahwa HIMTI memiliki cita-cita yang setinggi langit </li><li class="garisbawah">						
+                                 <b>Tulisan Universitas Bina Nusantara berwarna merah</b> : melambangkan kecintaan pada almamater Bina Nusantara </li><li class="garisbawah">						
+                                 <b>Tulisan Himpunan Mahasiswa Teknik Informatika berwarna hitam</b> : melambangkan identitas Himpunan Mahasiswa Jurusan </li><li class="garisbawah">						
+                                 <b>Tulisan HIMTI berwarna biru diapit dua buah bintang</b> : melambangkan keinginan HIMTI untuk selalu berusaha menjadi yang terbaik </li></div>
+                </div>
+            </div>
+            <div class="inside">
+            	<div class="content">
+                	<table width="300" border="0" align="center" style="margin-top:-60px; margin-left:0px;">
+                <tbody><tr>
+                    <td width="300" align="center" valign="top"><h2>Mars HIMTI</h2>
+                       <br>	Mari semua melangkah maju<br>
+                                Bulatkanlah tekadmu<br>
+                                Berkarya bagi nusa dan bangsa<br>
+                                Wujudkan cita-cita mulia <br><br>
+        
+                                Derapkanlah langkah kakimu<br>
+                                Menyongsong masa depanmu<br>
+                                Siap berbakti dan mengabdi<br>
+                                Bagi Univ Bina Nusantara<br><br>
+        
+                                Maju terus pantang mundur<br>
+                                Membangun pendidikan bangsa<br>
+                                Galang persatuan dan kesatuan<br>
+                                HIMTI Bina Nusantara</td><tr>
+                                <td width="235" align="center" valign="top"><br>
+                               <b>Diciptakan Oleh</b> : L. Meilani H <br>
+                            <b>Pada</b> : 20 Agustus 1998 <br>
+        
+                             <b>Aransemen musik oleh</b> : Ferry Mulyawan <br></td></tr>
+                    
+                     <br><br>
+                   
+                 </tr>
+            </tbody></table>
+                </div>
+            </div>
+        </div>
+ 	</div>
+    <div style="margin:auto; margin-bottom:50px;" align="center">
+    	<h2 align="center">Struktur<br>
+                Himpunan Mahasiswa Teknik Informatika (HIMTI)</h2><br>
+    	<img src="images/st.jpg"/>
+    </div>
+    <div id="container" style="height:auto; padding-bottom:30px; color:white;">
+         <div id="tab" align="center">
+                <ul>
+                    <li id="one" class="tab-active" onclick="showone()">Komisi 1</li>
+                    <li id="two" class="tab-bar" onclick="showtwo()">Komisi 2</li>
+                    <li id="three" class="tab-bar"  onclick="showthree()">Komisi 3</li>
+                </ul>
+            </div><div style="height:120px;"></div>
+        <div id="isi1">
+        	<p align="justify">
+				</p><p><strong>Komisi 1</strong></p>
+<p>&nbsp;</p>
+<p>Education</p>
+<p>Merupakan Komisi dari HIMTI yang bergerak di bidang edukasi, komisi satu bertugas untuk merangkul para mahasiswa teknik informatika BINUS University melalui pengadaan kegiatan-kegiatan edukasi berupa responsi, Programming Class, dan juga Try Out sebelum Ujian Tengah Semester dan Ujian Akhir Semester.<br>Divisi :</p>
+<p><strong>• Responsi :</strong><br>Divisi dari komisi satu yang bertugas untuk memberi pengayaan materi perkuliahan selama semester berlangsung, pengayaan yang berupa pengadaan kelas belajar yang terbuka untuk para mahasiswa teknik informatika BINUS University yang sama sekali tidak dipungut biaya untuk setiap minggunya. Divisi responsi juga mengadakan responsi by request bagi mahasiswa yang jadwalnya tidak memungkinkan untuk mengikuti responsi.</p>
+<p>&nbsp;</p>
+<p><strong>• Programming Class :</strong><br>Divisi dari komisi satu yang bertugas untuk mengadakan kelas programming, yaitu kelas yang berjalan selama satu semester dengan topic-topik programming yang berbeda setiap semesternya. Programming Class memberikan topic-topik programming yang tidak akan didapatkan pada materi-materi kuliah pada umumnya, sehingga dapat dipastikan mahasiswa yang mengikutinya akan memiliki kemampuan lebih dibandingkan dengan yang lainnya.</p>		   <p></p>
+		</div>
+         <div id="isi2">
+			<p align="justify">
+</p><p><br><strong>Komisi 2 "General Affair"</strong> <br> Bertanggung jawab untuk mengembangkan komunitas mahasiswa berbasis IT di Binus, serta menjalin relasi dengan pihak internal &amp;eksternal di Binus.</p>
+<p>&nbsp;</p>
+<p>Divisi : <br><strong>- Public Relation</strong> <br> Bertanggung jawab untuk menjalin hubungan terhadap pihak internal Binus serta eksternal Binus seperti UKM, HMJ, alumni HIMTI,media,dan komunitas lain.</p>
+<p><strong>- Marketing</strong><br> Bertanggung jawab untuk menjalin hubungan dengan sponsor dan pihak perusahaan lain untuk bekerjasama dengan HIMTI dalam hal funding.</p>
+<p><strong>- HC (HIMTI Care)</strong> <br> Bertanggung jawab untuk mengadakan kegiatan internal khusus aktivis &amp; pengurus HIMTI, dan pusat kontrol sekretariat HIMTI.</p>		   <p></p>
+		</div>
+        <div id="isi3">
+			<p align="justify">
+				</p><p><strong>Komisi 3 Research &amp; Development</strong></p>
+<p><br>Komisi 3 adalah komisi yang bergerak di bidang research &amp; development terutama dalam bidang pembuatan dan pengembangan website (Web Development), desain (Creative and Design), dan majalah (HIMTI Magz)</p>
+<p><strong>Creative and Design</strong><br>Divisi Creative and Design merupakan divisi yang berfokus pada pembuatan desain, animasi, dan pengembangannya. Divisi ini bertugas untuk mendesain template dan aplikasi untuk keperluan HIMTI</p>
+<p><strong>Web Development</strong><br>Divisi Web Development merupakan divisi yang berfokus pada maintenance dan pengembangan website HIMTI, forum HIMTI, aplikasi web, Facebook HIMTI, serta website event HIMTI</p>
+<p><strong>HIMTI Magz</strong><br>Divisi HIMTI Magz merupakan divisi yang bergerak dalam bidang pembuatan buletin yang dimiliki HIMTI yang terbit dua bulan sekali, yang bernama HIMTIMagz</p>		   <p></p>
+		</div>
+        </div>
+ 	</div>
+     <div id="cont1">
+    	<div style="width:50%; float:left;">
+            <h2>Temukan Kami di :</h2>
+            <a href="http://www.facebook.com/himtibinus"><img src="images/facebook.png"/></a>
+        	<a href="http://www.twitter.com/himtibinus"><img src="images/twitter.png"/></a>
+        </div>
+        <div style="width:50%; float:left;" align="right">
+            <h2>Atau Kontak Kami di :</h2>
+             <a href="mailto:mail@himti.org"><img src="images/email.png"/></a>
+        </div>
+    </div>
+    <div id="container" style="font-size:12px; color:white; text-align:center; height:30px;padding-top:15px; margin-bottom:-30px;">
+    	Copyright &copy; 2014 by JR Team 
+    </div>
+</body>
+</html>

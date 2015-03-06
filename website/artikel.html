@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HIMTI</title>
+
+  <link rel="stylesheet" href="css/liquid-slider.css">
+<link rel="shortcut icon" href="images/logo.ico">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/vpb_script.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/jquery.liquid-slider.js"></script>  
+</head>
+
+<body>
+	<div id="top">
+        <div id="title-top">
+        	<a href="index.html"><div id="logo-top"></div></a>
+            <a href="javascript:void(0);" class="vpb_general_button" onClick="vpb_show_login_box();" style="float:right; margin-right:10px; margin-top:5px;" id="log" >Login</a>
+            <!--Form Login-->
+                <div id="vpb_pop_up_background"></div>
+                <div id="vpb_login_pop_up_box" class="vpb_signup_pop_up_box">
+                    <div align="left" style="font-family:Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold;">Login</div><br clear="all">
+                    
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">Your Username:</div>
+                    <div style="width:300px;float:left;" align="left"><input type="text" id="usernames" name="usernames" value="" class="vpb_textAreaBoxInputs" placeholder="Username" maxlength="10"></div><br clear="all"><br clear="all">
+                    
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">Your Password:</div>
+                    <div style="width:300px;float:left;" align="left"><input type="password" id="passs" name="passs" value="" class="vpb_textAreaBoxInputs" placeholder="Password"></div><br clear="all"><br clear="all">
+                    <div style="width:400px;float:left;color:red;" align="center" id="error"></div><br clear="all"><br clear="all">
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">&nbsp;</div>
+                    <div style="width:300px;float:left;" align="left">
+                    
+                    <input type="submit" class="vpb_general_button" value="Submit" id="submit" >
+                    
+                    <a href="javascript:void(0);" class="vpb_general_button" onClick="vpb_hide_popup_boxes();">Cancel</a>
+                    </div>
+                    
+                    <br clear="all"><br clear="all">
+                </div>
+            <!--end-->
+           	<div style="visibility:hidden;" id="welcome" >Selamat Datang, </div>
+        </div>
+    </div>
+   
+    <div id="menu" align="center">
+         <ul>
+            <a href="index.html"><li id="menu-bar">Home</li></a>
+            <a href="tentang.html"><li id="menu-bar" >Tentang</li></a>
+            <a href="index.html"><li id="himti"></li></a>
+            <a href="galeri.html"><li id="menu-bar" >Galeri</li></a>
+            <a href="artikel.html"><li id="menu-bar" class="menu-active">Artikel</li></a>
+        </ul>
+    </div><br>
+    <div id="slider">
+    	<ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+            <div class="slide">
+               <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-6" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-3" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-4" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-5" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-5" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-6" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-6" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-5" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <li class="nav-dots">
+          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+        </li>
+    </ul>
+    </div><br /><br />
+    <div id="container" style="height:600px;">
+		<div id="tab" align="center" style="width:1200px;">
+                <ul>
+                    <li id="life" class="tab-active" onclick="showlife()">Lifestyle</li>
+                    <li id="soft" class="tab-bar" onclick="showsoft()">Software</li>
+                    <li id="hard" class="tab-bar"  onclick="showhard()">Hardware</li>
+                    <li id="aevent" class="tab-bar"  onclick="showaevent()">Event</li>
+                    <li id="nevent" class="tab-bar"  onclick="shownevent()">Non-Event</li>
+                </ul>
+            </div><div style="height:150px;"></div>
+		<div id="life-content">
+		  <div class="liquid-slider"  id="main-slider">
+		<div>
+		  <div id="three-colom" >
+				<div class="inside1">
+					<div class="content" >
+						<p align="center"><img src="images/HEXION-2013-HIMTI-Expo-and-Competition-Binus-University.jpg" width="300" height="100"/></p>
+						<p><h3>Cara Mengatasi Website yang Terkena Malware</h3></p>
+						<p class="date-display">2013-12-04 09:24:34</p>
+						<p>
+												“The people who wrote viruses knew they had to stay one step ahead; they developed ways to
+						
+						make their viruses more difficult to detect.”-Peter H. Gregory
+						
+						Pas lagi asik internetan, mungkin kamu pernah mengunjungi atau nyasar ke website yang
+						
+						gak bisa diakses. Website yang gak bisa diakses ini bukan karena permasalahan internal atau
+						
+						yang lainnya, melainkan karena website tersebut mengandung malware yang kemudian di
+						
+						blok oleh Search Engine dan Browser......
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+                         
+                            
+							
+                    </div>	
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/HEXION-2013-HIMTI-Expo-and-Competition-Binus-University.jpg" width="300" height="100"/></p>
+						<p><h3>Optimalkan Database Kamu!</h3></p>
+						<p class="date-display">2013-11-03 08:19:42</p>
+						<p>
+												Jaman sekarang sudah banyak yang berjualan dan memilih berbelanja secara online. Dengan alasan agar lebih praktis. Buat kamu yang punya toko online (atau blog pribadi) pasti harus punya website yang gampang diakses dan loading dengan cepat, jangan sampai pelanggan toko online atau pembaca blog yang mau lihat website-nya....
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/HEXION-2013-HIMTI-Expo-and-Competition-Binus-University.jpg" width="300" height="100"/></p>
+						<p><h3>Hiasi Blog atau Website Kamu Agar Lebih Oke!</h3></p>
+						<p class="date-display">2013-10-01 09:52:43</p>
+						<p>
+												"Sharing is good, and with digital technology, sharing is easy."-Richard Stallman
+
+	Siapa diantara kamu yang memanfaatkan teknologi digital seperti Blog atau Website untuk berbagi? Pasti jadi lebih lega ya karena tidak dibatasi oleh jumlah karakter tulisan. Kamu pun tidak hanya bisa sharing melalui tulisan, melainkan juga dapat sharing dengan video, foto, dsb
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>   
+		<div>
+			<div id="three-colom">
+				<div class="inside1">
+					<div class="content">
+						<p align="center"><img src="images/HEXION-2013-HIMTI-Expo-and-Competition-Binus-University.jpg" width="300" height="100"/></p>
+						<p><h3>Sindiran Nokia kepada Apple</h3></p>
+						<p class="date-display">2013-09-29 02:20:45</p>
+						<p>
+												Nokia memang kerap kali memberikan sindiran kepada para pesaingnya, Tak hanya Apple, Nokia juga menyindir berbagai produsen ponsel besar lainnya. Sindiran-sindiran yang datang dari Nokia memang kerap kali bisa membuat para konsumen tersenyum atau bahkan tertawa. Namun kali ini ada sebuah sindiran yang dilontarkan oleh Nokia kepada...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/HEXION-2013-HIMTI-Expo-and-Competition-Binus-University.jpg" width="300" height="100"/></p>
+						<p><h3>Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara</h3></p>
+						<p class="date-display">2013-10-10 15:33:37</p>
+						<p>
+												Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/HEXION-2013-HIMTI-Expo-and-Competition-Binus-University.jpg" width="300" height="100"/></p>
+						<p><h3>Gold Earphones</h3></p>
+						<p class="date-display">2013-09-29 01:40:44</p>
+						<p>
+												Terkadang Wanita mampu mengeluarkan nominal fantastis untuk barang-barang yang mereka sukai, bahkan tak jarang ditemui, wanita mengeluarkan jutaan hingga milyaran rupiah hanya untuk barang-barang edisi terbatas atau sekedar perhiasa...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	 </div>
+	 <div id="soft-content">
+		  <div class="liquid-slider"  id="main-slider1">
+		<div>
+		  <div id="three-colom" >
+				<div class="inside1">
+					<div class="content" >
+						<p align="center"><img src="images/Logo_START.jpg" width="250" height="150"/></p>
+						<p><h3>Cara Mengatasi Website yang Terkena Malware</h3></p>
+						<p class="date-display">2013-12-04 09:24:34</p>
+						<p>
+												“The people who wrote viruses knew they had to stay one step ahead; they developed ways to
+						
+						make their viruses more difficult to detect.”-Peter H. Gregory
+						
+						Pas lagi asik internetan, mungkin kamu pernah mengunjungi atau nyasar ke website yang
+						
+						gak bisa diakses....
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/Logo_START.jpg" width="250" height="150"/></p>
+						<p><h3>Optimalkan Database Kamu!</h3></p>
+						<p class="date-display">2013-11-03 08:19:42</p>
+						<p>
+												Jaman sekarang sudah banyak yang berjualan dan memilih berbelanja secara online. Dengan alasan agar lebih praktis. Buat kamu yang punya toko online (atau blog pribadi) pasti harus punya website yang gampang diakses dan loading dengan cepat, jangan sampai pelanggan toko online atau pembaca blog yang mau lihat website-nya....
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/Logo_START.jpg" width="250" height="150"/></p>
+						<p><h3>Hiasi Blog atau Website Kamu Agar Lebih Oke!</h3></p>
+						<p class="date-display">2013-10-01 09:52:43</p>
+						<p>
+												"Sharing is good, and with digital technology, sharing is easy."-Richard Stallman
+
+	Siapa diantara kamu yang memanfaatkan teknologi digital seperti Blog atau Website untuk berbagi? Pasti jadi lebih lega ya karena tidak dibatasi oleh jumlah karakter tulisan. Kamu pun tidak hanya bisa sharing melalui tulisan...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+		  <div id="three-colom">
+				<div class="inside1">
+					<div class="content">
+						<p align="center"><img src="images/Logo_START.jpg" width="250" height="150"/></p>
+						<p><h3>Sindiran Nokia kepada Apple</h3></p>
+						<p class="date-display">2013-09-29 02:20:45</p>
+						<p>
+												Nokia memang kerap kali memberikan sindiran kepada para pesaingnya, Tak hanya Apple, Nokia juga menyindir berbagai produsen ponsel besar lainnya. Sindiran-sindiran yang datang dari Nokia memang kerap kali bisa membuat para konsumen tersenyum atau bahkan tertawa. Namun kali ini ada sebuah sindiran yang dilontarkan oleh Nokia kepada...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/Logo_START.jpg" width="250" height="150"/></p>
+						<p><h3>Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara</h3></p>
+						<p class="date-display">2013-10-10 15:33:37</p>
+						<p>
+												Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/Logo_START.jpg" width="250" height="150"/></p>
+						<p><h3>Gold Earphones</h3></p>
+						<p class="date-display">2013-09-29 01:40:44</p>
+						<p>
+												Terkadang Wanita mampu mengeluarkan nominal fantastis untuk barang-barang yang mereka sukai, bahkan tak jarang ditemui, wanita mengeluarkan jutaan hingga milyaran rupiah hanya untuk barang-barang edisi terbatas atau sekedar perhiasa...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>          
+	  </div>
+	 </div>
+     <div id="hard-content">
+		  <div class="liquid-slider"  id="main-slider3">
+		<div>
+		  <div id="three-colom" >
+				<div class="inside1">
+					<div class="content" >
+						<p align="center"><img src="images/q1.png" width="350" height="100"/></p>
+						<p><h3>Cara Mengatasi Website yang Terkena Malware</h3></p>
+						<p class="date-display">2013-12-04 09:24:34</p>
+						<p>
+												“The people who wrote viruses knew they had to stay one step ahead; they developed ways to
+						
+						make their viruses more difficult to detect.”-Peter H. Gregory
+						
+						Pas lagi asik internetan, mungkin kamu pernah mengunjungi atau nyasar ke website yang
+						
+						gak bisa diakses. Website yang gak bisa diakses ini bukan karena permasalahan internal atau
+						
+						yang lainnya, melainkan karena website tersebut mengandung malware yang kemudian di
+						
+						blok oleh Search Engine dan Browser......
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/q1.png" width="350" height="100"/></p>
+						<p><h3>Optimalkan Database Kamu!</h3></p>
+						<p class="date-display">2013-11-03 08:19:42</p>
+						<p>
+												Jaman sekarang sudah banyak yang berjualan dan memilih berbelanja secara online. Dengan alasan agar lebih praktis. Buat kamu yang punya toko online (atau blog pribadi) pasti harus punya website yang gampang diakses dan loading dengan cepat, jangan sampai pelanggan toko online atau pembaca blog yang mau lihat website-nya....
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/q1.png" width="350" height="100"/></p>
+						<p><h3>Hiasi Blog atau Website Kamu Agar Lebih Oke!</h3></p>
+						<p class="date-display">2013-10-01 09:52:43</p>
+						<p>
+												"Sharing is good, and with digital technology, sharing is easy."-Richard Stallman
+
+	Siapa diantara kamu yang memanfaatkan teknologi digital seperti Blog atau Website untuk berbagi? Pasti jadi lebih lega ya karena tidak dibatasi oleh jumlah karakter tulisan. Kamu pun tidak hanya bisa sharing melalui tulisan, melainkan juga dapat sharing dengan video, foto, dsb
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+		  <div id="three-colom">
+				<div class="inside1">
+					<div class="content">
+						<p align="center"><img src="images/q1.png" width="350" height="100"/></p>
+						<p><h3>Sindiran Nokia kepada Apple</h3></p>
+						<p class="date-display">2013-09-29 02:20:45</p>
+						<p>
+												Nokia memang kerap kali memberikan sindiran kepada para pesaingnya, Tak hanya Apple, Nokia juga menyindir berbagai produsen ponsel besar lainnya. Sindiran-sindiran yang datang dari Nokia memang kerap kali bisa membuat para konsumen tersenyum atau bahkan tertawa. Namun kali ini ada sebuah sindiran yang dilontarkan oleh Nokia kepada...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/q1.png" width="350" height="100"/></p>
+						<p><h3>Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara</h3></p>
+						<p class="date-display">2013-10-10 15:33:37</p>
+						<p>
+												Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/q1.png" width="350" height="100"/></p>
+						<p><h3>Gold Earphones</h3></p>
+						<p class="date-display">2013-09-29 01:40:44</p>
+						<p>
+												Terkadang Wanita mampu mengeluarkan nominal fantastis untuk barang-barang yang mereka sukai, bahkan tak jarang ditemui, wanita mengeluarkan jutaan hingga milyaran rupiah hanya untuk barang-barang edisi terbatas atau sekedar perhiasa...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>          
+		</div>
+	  </div>
+          <div id="event-content">
+		  <div class="liquid-slider"  id="main-slider4">
+		<div>
+		  <div id="three-colom" >
+				<div class="inside1">
+					<div class="content" >
+						<p align="center"><img src="images/HIMTI.png" width="75" height="75"/></p>
+						<p><h3>Cara Mengatasi Website yang Terkena Malware</h3></p>
+						<p class="date-display">2013-12-04 09:24:34</p>
+						<p>
+												“The people who wrote viruses knew they had to stay one step ahead; they developed ways to
+						
+						make their viruses more difficult to detect.”-Peter H. Gregory
+						
+						Pas lagi asik internetan, mungkin kamu pernah mengunjungi atau nyasar ke website yang
+						
+						gak bisa diakses. Website yang gak bisa diakses ini bukan karena permasalahan internal atau
+						
+						yang lainnya, melainkan karena website tersebut mengandung malware yang kemudian di
+						
+						blok oleh Search Engine dan Browser......
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/HIMTI.png" width="75" height="75"/></p>
+						<p><h3>Optimalkan Database Kamu!</h3></p>
+						<p class="date-display">2013-11-03 08:19:42</p>
+						<p>
+												Jaman sekarang sudah banyak yang berjualan dan memilih berbelanja secara online. Dengan alasan agar lebih praktis. Buat kamu yang punya toko online (atau blog pribadi) pasti harus punya website yang gampang diakses dan loading dengan cepat, jangan sampai pelanggan toko online atau pembaca blog yang mau lihat website-nya....
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/HIMTI.png" width="75" height="75"/></p>
+						<p><h3>Hiasi Blog atau Website Kamu Agar Lebih Oke!</h3></p>
+						<p class="date-display">2013-10-01 09:52:43</p>
+						<p>
+												"Sharing is good, and with digital technology, sharing is easy."-Richard Stallman
+
+	Siapa diantara kamu yang memanfaatkan teknologi digital seperti Blog atau Website untuk berbagi? Pasti jadi lebih lega ya karena tidak dibatasi oleh jumlah karakter tulisan. Kamu pun tidak hanya bisa sharing melalui tulisan, melainkan juga dapat sharing dengan video, foto, dsb
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+		  <div id="three-colom">
+				<div class="inside1">
+					<div class="content">
+						<p align="center"><img src="images/HIMTI.png" width="75" height="75"/></p>
+						<p><h3>Sindiran Nokia kepada Apple</h3></p>
+						<p class="date-display">2013-09-29 02:20:45</p>
+						<p>
+												Nokia memang kerap kali memberikan sindiran kepada para pesaingnya, Tak hanya Apple, Nokia juga menyindir berbagai produsen ponsel besar lainnya. Sindiran-sindiran yang datang dari Nokia memang kerap kali bisa membuat para konsumen tersenyum atau bahkan tertawa. Namun kali ini ada sebuah sindiran yang dilontarkan oleh Nokia kepada...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/HIMTI.png" width="75" height="75"/></p>
+						<p><h3>Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara</h3></p>
+						<p class="date-display">2013-10-10 15:33:37</p>
+						<p>
+												Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/HIMTI.png" width="75" height="75"/></p>
+						<p><h3>Gold Earphones</h3></p>
+						<p class="date-display">2013-09-29 01:40:44</p>
+						<p>
+												Terkadang Wanita mampu mengeluarkan nominal fantastis untuk barang-barang yang mereka sukai, bahkan tak jarang ditemui, wanita mengeluarkan jutaan hingga milyaran rupiah hanya untuk barang-barang edisi terbatas atau sekedar perhiasa...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>          
+		</div>
+	  </div> 
+                <div id="nevent-content">
+		  <div class="liquid-slider"  id="main-slider5">
+		<div>
+		  <div id="three-colom" >
+				<div class="inside1">
+					<div class="content" >
+						<p align="center"><img src="images/hexion.png" width="250" height="75"/></p>
+						<p><h3>Cara Mengatasi Website yang Terkena Malware</h3></p>
+						<p class="date-display">2013-12-04 09:24:34</p>
+						<p>
+												“The people who wrote viruses knew they had to stay one step ahead; they developed ways to
+						
+						make their viruses more difficult to detect.”-Peter H. Gregory
+						
+						Pas lagi asik internetan, mungkin kamu pernah mengunjungi atau nyasar ke website yang
+						
+						gak bisa diakses. Website yang gak bisa diakses ini bukan karena permasalahan internal atau
+						
+						yang lainnya, melainkan karena website tersebut mengandung malware yang kemudian di
+						
+						blok oleh Search Engine dan Browser......
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/hexion.png" width="250" height="75"/></p>
+						<p><h3>Optimalkan Database Kamu!</h3></p>
+						<p class="date-display">2013-11-03 08:19:42</p>
+						<p>
+												Jaman sekarang sudah banyak yang berjualan dan memilih berbelanja secara online. Dengan alasan agar lebih praktis. Buat kamu yang punya toko online (atau blog pribadi) pasti harus punya website yang gampang diakses dan loading dengan cepat, jangan sampai pelanggan toko online atau pembaca blog yang mau lihat website-nya....
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/hexion.png" width="250" height="75"/></p>
+						<p><h3>Hiasi Blog atau Website Kamu Agar Lebih Oke!</h3></p>
+						<p class="date-display">2013-10-01 09:52:43</p>
+						<p>
+												"Sharing is good, and with digital technology, sharing is easy."-Richard Stallman
+
+	Siapa diantara kamu yang memanfaatkan teknologi digital seperti Blog atau Website untuk berbagi? Pasti jadi lebih lega ya karena tidak dibatasi oleh jumlah karakter tulisan. Kamu pun tidak hanya bisa sharing melalui tulisan, melainkan juga dapat sharing dengan video, foto, dsb
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+		  <div id="three-colom">
+				<div class="inside1">
+					<div class="content">
+						<p align="center"><img src="images/hexion.png" width="250" height="75"/></p>
+						<p><h3>Sindiran Nokia kepada Apple</h3></p>
+						<p class="date-display">2013-09-29 02:20:45</p>
+						<p>
+												Nokia memang kerap kali memberikan sindiran kepada para pesaingnya, Tak hanya Apple, Nokia juga menyindir berbagai produsen ponsel besar lainnya. Sindiran-sindiran yang datang dari Nokia memang kerap kali bisa membuat para konsumen tersenyum atau bahkan tertawa. Namun kali ini ada sebuah sindiran yang dilontarkan oleh Nokia kepada...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/hexion.png" width="250" height="75"/></p>
+						<p><h3>Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara</h3></p>
+						<p class="date-display">2013-10-10 15:33:37</p>
+						<p>
+												Pengumuman Seleksi Penerimaan Aktivis HIMTI (SPAH) 2013 - Tahap Wawancara...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+				<div class="inside">
+					<div class="content">
+						<p align="center"><img src="images/hexion.png" width="250" height="75"/></p>
+						<p><h3>Gold Earphones</h3></p>
+						<p class="date-display">2013-09-29 01:40:44</p>
+						<p>
+												Terkadang Wanita mampu mengeluarkan nominal fantastis untuk barang-barang yang mereka sukai, bahkan tak jarang ditemui, wanita mengeluarkan jutaan hingga milyaran rupiah hanya untuk barang-barang edisi terbatas atau sekedar perhiasa...
+						
+						</p>
+						 <p><a href="see-more.html" class="vpb_general_button" id="basic1"  style="float:right; margin-right:10px; margin-top:5px;">See More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>          
+		</div>
+	  </div> 
+      
+</div>
+  <script>
+    $('#main-slider').liquidSlider();
+	$('#main-slider1').liquidSlider();
+	$('#main-slider2').liquidSlider();
+	$('#main-slider3').liquidSlider();
+	$('#main-slider4').liquidSlider();	
+	$('#main-slider5').liquidSlider();
+
+  </script>
+     <div id="cont1">
+    	<div style="width:604px; float:left;">
+            <h2>Temukan Kami di :</h2>
+            <a href="http://www.facebook.com/himtibinus"><img src="images/facebook.png"/></a>
+        	<a href="http://www.twitter.com/himtibinus"><img src="images/twitter.png"/></a>
+        </div>
+        <div style="width:604px; float:left;" align="right">
+            <h2>Atau Kontak Kami di :</h2>
+             <a href="mailto:mail@himti.org"><img src="images/email.png"/></a>
+        </div>
+    </div>
+    <div id="container" style="font-size:12px; color:white; text-align:center; height:30px;padding-top:15px; margin-bottom:-30px;">
+    	Copyright &copy; 2014 by JR Team 
+    </div>
+</body>
+</html>

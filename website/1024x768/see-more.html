@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HIMTI</title>
+
+  <link rel="stylesheet" href="css/liquid-slider.css">
+<link rel="shortcut icon" href="images/logo.ico">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/vpb_script.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+
+</head>
+
+<body>
+<div id="fb-root"></div>
+
+	<div id="top">
+        <div id="title-top">
+        	<a href="index.html"><div id="logo-top"></div></a>
+            <a href="javascript:void(0);" class="vpb_general_button" onClick="vpb_show_login_box();" style="float:right; margin-right:10px; margin-top:5px;" id="log" >Login</a>
+            <!--Form Login-->
+                <div id="vpb_pop_up_background"></div>
+                <div id="vpb_login_pop_up_box" class="vpb_signup_pop_up_box">
+                    <div align="left" style="font-family:Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold;">Login</div><br clear="all">
+                    
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">Your Username:</div>
+                    <div style="width:300px;float:left;" align="left"><input type="text" id="usernames" name="usernames" value="" class="vpb_textAreaBoxInputs" placeholder="Username" maxlength="10"></div><br clear="all"><br clear="all">
+                    
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">Your Password:</div>
+                    <div style="width:300px;float:left;" align="left"><input type="password" id="passs" name="passs" value="" class="vpb_textAreaBoxInputs" placeholder="Password"></div><br clear="all"><br clear="all">
+                    <div style="width:400px;float:left;color:red;" align="center" id="error"></div><br clear="all"><br clear="all">
+                    <div style="width:100px; padding-top:10px;margin-left:10px;float:left;" align="left">&nbsp;</div>
+                    <div style="width:300px;float:left;" align="left">
+                    
+                    <input type="submit" class="vpb_general_button" value="Submit" id="submit" >
+                    
+                    <a href="javascript:void(0);" class="vpb_general_button" onClick="vpb_hide_popup_boxes();">Cancel</a>
+                    </div>
+                    
+                    <br clear="all"><br clear="all">
+                </div>
+            <!--end-->
+           	<div style="visibility:hidden;" id="welcome" >Selamat Datang, </div>
+        </div>
+    </div>
+   
+    <div id="menu" align="center">
+         <ul>
+            <a href="index.html"><li id="menu-bar">Home</li></a>
+            <a href="tentang.html"><li id="menu-bar" >Tentang</li></a>
+            <a href="index.html"><li id="himti"></li></a>
+            <a href="galeri.html"><li id="menu-bar" >Galeri</li></a>
+            <a href="artikel.html"><li id="menu-bar" class="menu-active">Artikel</li></a>
+        </ul>
+    </div><br>
+   <div id="slider">
+    	<ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+            <div class="slide">
+               <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-6" class="prev">&#x2039;</label>
+                <label for="img-2" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-1" class="prev">&#x2039;</label>
+                <label for="img-3" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-3" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-2" class="prev">&#x2039;</label>
+                <label for="img-4" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-4" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-3" class="prev">&#x2039;</label>
+                <label for="img-5" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-5" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/hexion.png" />
+            </div>
+            <div class="nav">
+                <label for="img-4" class="prev">&#x2039;</label>
+                <label for="img-6" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-6" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="images/q.png" />
+            </div>
+            <div class="nav">
+                <label for="img-5" class="prev">&#x2039;</label>
+                <label for="img-1" class="next">&#x203a;</label>
+            </div>
+        </li>
+    
+        <li class="nav-dots">
+          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+        </li>
+    </ul>
+    </div><br /><br />
+    <div id="container" style="color:white; height:auto; text-decoration:none;">
+   		<div id="three-colom" style="width:950px;" align="center">
+		<p style="font-size:25px;font-weight:bold;">Cara Mengatasi Website yang Terkena Malware</p><br>
+		<p style="margin-top:-10px;">2013-12-04 09:24:34</p><br>
+		<img src="http://himti.org/images/news/q.png" align="center" width="820px" height="200px" style="margin-left:25px;"><br>
+		<p align="justify" style="padding-top:50px;padding-bottom:20px;">
+			Lorem ipsum dolor sit amet, sed error copiosae at, forensibus signiferumque eum ea, pri libris impetus id. Probo nullam mea eu. An vide explicari vituperatoribus eum, sed consequat consequuntur in, sit id sonet ludus inimicus. Ut novum vidisse voluptua pri, prompta dolorum partiendo in qui, vero constituto his id. Has cu harum nihil denique. Odio quot referrentur quo ne.
+
+Prompta invenire ut sea. Ne usu tollit oblique mediocrem, ei sed integre recteque. Mei at altera accommodare. Amet commune conceptam ex eam. Cum ut viris rationibus, id omnium dolorem phaedrum duo. At mea appareat platonem reprehendunt.
+
+Pro in putent habemus liberavisse, pri ad sonet latine fastidii. Probo volutpat postulant ad sit, sea te mazim animal adipisci, ad esse facer posidonium usu. Iusto ponderum nam ut, has eu possim invenire. Augue choro dissentiet eu pro. Eam appareat iudicabit intellegat at. Sed probo brute senserit ut, eam ea odio labore dolorum. His te amet efficiendi.
+
+An vix augue consequuntur. Te solum consulatu duo, quo ei everti audire fabellas, facilisi efficiantur ad vim. Vis mundi scripta veritus at, erant mandamus nec cu, cum in harum quaestio. Ex ludus apeirian deterruisset vim. Quo laudem hendrerit ex, sed vivendum abhorreant id. Ad volutpat definitiones sed, sit id elit detraxit indoctum, et vel delectus conceptam definitiones. Et pro sint inimicus, saepe discere pericula per ne.
+
+Detraxit euripidis sea cu, ex pri nonumy expetenda, quot delicata mea te. Ea mea elitr causae laoreet. Et sale autem complectitur pri. Commune detracto eum cu. Inani honestatis sit et, vidisse labores periculis vim in, vel ea cibo feugiat.
+<div id="share-buttons">
+ 
+<!-- Facebook -->
+<a href="http://www.facebook.com/sharer.php?u=http://www.himti.org" target="_blank"><img src="images/fb-share.png" alt="Facebook" /></a>
+ 
+<!-- Twitter -->
+<a href="http://twitter.com/share?url=http://www.himti.org&text" target="_blank"><img src="images/twitter-share.png" alt="Twitter" /></a>
+ 
+<!-- Google+ -->
+<a href="https://plus.google.com/share?url=http://www.himti.org" target="_blank"><img src="images/google.png" alt="Google" /></a>
+ 
+<!-- Digg -->
+<a href="http://www.digg.com/submit?url=http://www.himti.org" target="_blank"><img src="images/diggit.png" alt="Digg" /></a>
+ 
+<!-- Reddit -->
+<a href="http://reddit.com/submit?url=http://www.himti.org&title" target="_blank"><img src="images/reddit.png" alt="Reddit" /></a>
+ 
+<!-- LinkedIn -->
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.himti.org" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+ 
+<!-- Pinterest -->
+<a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="images/pinterest.png" alt="Pinterest" /></a>
+ 
+<!-- StumbleUpon-->
+<a href="http://www.stumbleupon.com/submit?url=http://www.himti.org&title" target="_blank"><img src="images/stumbleupon.png" alt="StumbleUpon" /></a>
+ 
+<!-- Email -->
+<a href="mailto:?Subject=Simple Share Buttons&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.himti.org"><img src="images/email-share.png" alt="Email" /></a>
+ 
+</div><br />
+
+<hr style="border-bottom: 1px dotted #CCC;">
+    <!--Comment-->
+    <div id="content-comment" align="left">
+    </div>
+    <div align="left">
+    <table style="margin-bottom:20px;" >
+    	<tr>
+        	<td><h2>Komentar :</h2></td>
+        </tr>
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input type="text" placeholder="Nama" id="nama" maxlength="25" size="25" class="vpb_textAreaBoxInputs" /></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td><input type="text" placeholder="Email" id="email" size="25" class="vpb_textAreaBoxInputs" /></td>
+        </tr>
+        <tr>
+            <td>Komentar</td>
+            <td>:</td>
+            <td><textarea id="comment" rows="10" cols="18" class="vpb_textAreasBoxInputs" placeholder="Komentar"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="3"><div id="error1" style="color:red;font-size:14px;text-align:center"></div></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="submit" class="vpb_general_button" value="Submit" id="comment1" / ></td>
+        </tr>
+    </table>
+    <!--End-->
+    </div>
+        </div>
+	</div>
+     <div id="cont1">
+    	<div style="width:50%; float:left;">
+            <h2>Temukan Kami di :</h2>
+            <a href="http://www.facebook.com/himtibinus"><img src="images/facebook.png"/></a>
+        	<a href="http://www.twitter.com/himtibinus"><img src="images/twitter.png"/></a>
+        </div>
+        <div style="width:50%; float:left;" align="right">
+            <h2>Atau Kontak Kami di :</h2>
+             <a href="mailto:mail@himti.org"><img src="images/email.png"/></a>
+        </div>
+    </div>
+    <div id="container" style="font-size:12px; color:white; text-align:center; height:30px;padding-top:15px; margin-bottom:-30px;">
+    	Copyright &copy; 2014 by JR Team 
+    </div>
+</body>
+</html>
